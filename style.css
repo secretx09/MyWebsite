@@ -1,0 +1,76 @@
+body{
+background:#0b0b0b;
+color:#e6ffff;
+font-family:Courier New, monospace;
+margin:0;
+}
+
+/* NAVBAR */
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 40px;
+background:#000;
+border-bottom:2px solid #00eaff;
+}
+
+.logo{
+font-size:22px;
+font-weight:bold;
+color:#00eaff;
+}
+
+.nav-links a{
+margin-left:20px;
+color:#00eaff;
+text-decoration:none;
+}
+
+.nav-links a:hover{
+color:white;
+}
+
+/* CONTENT */
+
+.container{
+padding:40px;
+}
+
+/* PROJECT GRID */
+
+.project-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+}
+
+.project-card{
+border:1px solid #00eaff;
+background:#000;
+padding:20px;
+transition:.3s;
+color:white;
+}
+
+.project-card:hover{
+box-shadow:0 0 10px #00eaff;
+transform:translateY(-5px);
+}
+
+/* BUTTONS */
+
+button{
+background:none;
+border:1px solid #00eaff;
+color:#00eaff;
+padding:8px 15px;
+margin-right:10px;
+cursor:pointer;
+}
+
+button:hover{
+background:#00eaff;
+color:black;
+}
