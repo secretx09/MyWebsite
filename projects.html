@@ -1,51 +1,46 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Projects</title>
-<link rel="stylesheet" href="style.css">
-<script src="script.js"></script>
-</head>
+    <head>
+        <title>Projects</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="logo">
+                Xavier.dev
+            </div>
 
-<body>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
 
-<div class="navbar">
-<div class="logo">Xavier.dev</div>
+        <div class="container">
+            <h1>Projects</h1>
 
-<div class="nav-links">
-<a href="index.html">Home</a>
-<a href="projects.html">Projects</a>
-<a href="about.html">About</a>
-<a href="contact.html">Contact</a>
-</div>
-</div>
+            <button onclick="filterProjects('all')">All</button>
+            <button onclick="filterProjects('python')">Python</button>
+            <button onclick="filterProjects('html')">HTML</button>
 
-<div class="container">
+            <div class="project-grid">
+                <div class="project-card project python">
+                    <h3>Python Project</h3>
+                    <p>Description</p>
+                    <a href="#">Blog</a>
+                    <a href="#">GitHub</a>
+                </div>
 
-<h1>Projects</h1>
-
-<button onclick="filterProjects('all')">All</button>
-<button onclick="filterProjects('python')">Python</button>
-<button onclick="filterProjects('html')">HTML</button>
-
-<div class="project-grid">
-
-<div class="project-card project python">
-<h3>Python Project</h3>
-<p>Description</p>
-<a href="#">Blog</a>
-<a href="#">GitHub</a>
-</div>
-
-<div class="project-card project html">
-<h3>HTML Project</h3>
-<p>Description</p>
-<a href="#">Blog</a>
-<a href="#">GitHub</a>
-</div>
-
-</div>
-
-</div>
-
-</body>
+                <div class="project-card project html">
+                    <h3>HTML Project</h3>
+                    <p>Description</p>
+                    <a href="#">Blog</a>
+                    <a href="#">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
